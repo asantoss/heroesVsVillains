@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.wrapper {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#villainContainer {
+    grid-column-start: 3;
+    border: 2px solid black;
+}
+
+#heroContainer {
+    border: 2px solid black;
+
+}
+
+#gameOver {
+    grid-column-start: 2;
+}
+
+/* Container for skill bars */
+.container {
+    margin: 10px auto;
+    box-sizing: border-box;
+    width: 200px; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    box-sizing: border-box;
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
