@@ -11,26 +11,25 @@
     <script src="Hero.js"></script>
     <script src="Villain.js"></script>
     <script src="Weapon.js"></script>
-
     <title>Hero vs Villain</title>
 </head>
 
 <body>
-    <h1>Heroes vs Villains</h1>
+    <h1 id="header">Heroes vs Villains</h1>
     <div class="wrapper" id='mainContainer'>
-        <div id="heroContainer" class="player">
+        <div id="heroContainer" class="">
+            <p class="damage">20</p>
             <div id="hero">
                 Hero name: <input type="text" name="hero" id="heroText">
                 <input type="submit" value="submit" id="heroSubmit"><br>
             </div>
             <button id="heroAttack">Attack</button>
         </div>
-        <div class="vsContainer">
+        <!-- <div class="vsContainer">
             <h1>VS</h1>
-        </div>
+        </div> -->
         <div id="villainContainer" class="player">
             <div id="villain">
-
                 Villain Name: <input type="text" name="villain" id="villainText">
                 <input type="submit" value="Submit" id="villainSubmit"><br>
             </div>

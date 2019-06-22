@@ -27,6 +27,8 @@ document.getElementById('heroSubmit').addEventListener('click',()=>{
 
 document.getElementById('heroAttack').addEventListener('click', () => {
     player.attack(computer);  
+    document.getElementById('heroContainer').classList.toggle('heroAttack');
+    setTimeout(() => {document.getElementById('heroContainer').classList.toggle('heroAttack');}, 500)
     if(computer.health <= 0){
         return document.getElementById('mainContainer').innerHTML = `<div id="gameOver">
         <h1>You win!</h1>
@@ -40,6 +42,8 @@ document.getElementById('heroAttack').addEventListener('click', () => {
 })
 document.getElementById('villainAttack').addEventListener('click', () => {
     computer.attack(player);
+        document.getElementById('villainContainer').classList.toggle('villainAttack');
+        setTimeout(() => {document.getElementById('villainContainer').classList.toggle('villainAttack');}, 500)
     if(player.health <= 0){
         return document.getElementById('mainContainer').innerHTML = `<div id="gameOver">
         <h2>Game Over!</h2>

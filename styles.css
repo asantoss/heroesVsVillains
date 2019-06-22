@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Dosis&display=swap');
+
+*{
+    font-family: 'Cutive Mono', monospace;
+
+}
 body {
     text-align: center;
+
     width: 100vw;
     height: 100vh;
+}
+
+#header {
+    font-family: 'Dosis', sans-serif;
 }
 
 .wrapper {
@@ -12,7 +23,6 @@ body {
     height: 100%;
     width: 100%;
     align-items: center;
-    justify-items: start;
 }
 
 #villainContainer {
@@ -22,6 +32,7 @@ body {
 }
 
 #heroContainer {
+    grid-column-start: 1;
     border: 2px solid black;
     width: 100%;
 }
@@ -54,16 +65,46 @@ body {
     /* White text color */
 }
 
-.player {
-    animation-name: example;
-    animation-duration: 4s;
+.villainAttack {
+    animation-name: vAttack;
+    animation-duration: 0.5s;
 }
 
-@keyframes example {
+.heroAttack {
+    animation-name: hAttack;
+    animation-duration: 0.5s;
+}
+
+@keyframes vAttack {
     from {
-        background-color: red;
+        grid-column-start: 3;
     }
     to {
-        background-color: yellow;
+        grid-column-start: 2;
+    }
+}
+@keyframes hAttack {
+    from {
+        grid-column-start: 1;
+    }
+    to {
+        grid-column-start: 2;
+    }
+}
+
+/* #heroContainer > .damage {
+    position: absolute;
+    left: 250px;
+    bottom: 335px;
+    /* animation-name: dealDamage;
+    animation-duration: 1s; */
+} */
+
+@keyframes dealDamage {
+    from {
+        bottom: 335px;
+    }
+    to {
+        bottom: 7770px;
     }
 }
