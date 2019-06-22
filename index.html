@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,21 @@
 
     <title>Hero vs Villain</title>
 </head>
+
 <body>
     <h1>Heroes vs Villains</h1>
     <div class="wrapper" id='mainContainer'>
-        <div id="heroContainer">
+        <div id="heroContainer" class="player">
             <div id="hero">
                 Hero name: <input type="text" name="hero" id="heroText">
                 <input type="submit" value="submit" id="heroSubmit"><br>
             </div>
-                <button id="heroAttack">Attack</button>
+            <button id="heroAttack">Attack</button>
         </div>
         <div class="vsContainer">
             <h1>VS</h1>
         </div>
-        <div id="villainContainer">
+        <div id="villainContainer" class="player">
             <div id="villain">
 
                 Villain Name: <input type="text" name="villain" id="villainText">
@@ -37,4 +39,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

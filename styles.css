@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .wrapper {
@@ -7,36 +9,61 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
     text-align: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     align-items: center;
+    justify-items: start;
 }
 
 #villainContainer {
     grid-column-start: 3;
     border: 2px solid black;
+    width: 100%;
 }
 
 #heroContainer {
     border: 2px solid black;
-
+    width: 100%;
 }
 
 #gameOver {
     grid-column-start: 2;
 }
 
+
 /* Container for skill bars */
+
 .container {
     margin: 10px auto;
     box-sizing: border-box;
-    width: 200px; /* Full width */
-    background-color: #ddd; /* Grey background */
-  }
-  
-  .skills {
+    width: 200px;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+}
+
+.skills {
     box-sizing: border-box;
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
-  }
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+.player {
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
